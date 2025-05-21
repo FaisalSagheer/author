@@ -12,10 +12,10 @@ function Tour() {
 
                 <div className='flex justify-between items-center pb-10'>
                     <h2 className='text-2xl lg:text-5xl font-bold'>
-                        Upcoming Event
+                        Upcoming Events
                     </h2>
                     <Link
-                        href="#"
+                        href="/pages/tour"
                         className="border border-gray-300 px-10 py-4.5 text-[1rem] font-semibold text-[#111] shadow-xs hover:bg-gray-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
                     >
                         View All
