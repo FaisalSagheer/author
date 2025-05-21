@@ -4,10 +4,10 @@
 export const navItems = [
 //   { prop: "Home",  href:'/'},
 { prop: "Bio",  href:'/'},
-{ prop: "Tour",  href:'/tour'},
-  { prop: "Audio Books",  href:'/audio'},
-  { prop: "Books",  href:'/books'},
-  { prop: "Contact",  href:'/contact'},
+{ prop: "Tour",  href:'/'},
+  { prop: "Audio Books",  href:'/'},
+  { prop: "Books",  href:'/'},
+  { prop: "Contact",  href:'/'},
 ];
 
 
