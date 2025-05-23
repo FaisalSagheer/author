@@ -24,7 +24,56 @@ export const AboutBook = [
   }
 ]
 
-
+export const TourCards = [
+  {
+    src:"/assets/Hall.png",
+    alt:"/",
+    place:"Seattle, WA",
+    eventplace:"Benaroya Hall",
+    title:"An Evening with David Sedaris",
+    description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"
+  },
+  {
+    src:"/assets/Hall.png",
+    alt:"/",
+    place:"Seattle, WA",
+    eventplace:"Benaroya Hall",
+    title:"An Evening with David Sedaris",
+    description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"
+  },
+  {
+    src:"/assets/Hall.png",
+    alt:"/",
+    place:"Seattle, WA",
+    eventplace:"Benaroya Hall",
+    title:"An Evening with David Sedaris",
+    description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"
+  },
+  {
+    src:"/assets/Hall.png",
+    alt:"/",
+    place:"Seattle, WA",
+    eventplace:"Benaroya Hall",
+    title:"An Evening with David Sedaris",
+    description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"
+  },
+  {
+    src:"/assets/Hall.png",
+    alt:"/",
+    place:"Seattle, WA",
+    eventplace:"Benaroya Hall",
+    title:"An Evening with David Sedaris",
+    description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"
+  },
+  {
+    src:"/assets/Hall.png",
+    alt:"/",
+    place:"Seattle, WA",
+    eventplace:"Benaroya Hall",
+    title:"An Evening with David Sedaris",
+    description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"
+  },
+]
 
 export const footer1 = [
   { icon: "fa-solid fa-phone px-2", No: "+1 (512) 889-7071" },

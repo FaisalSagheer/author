@@ -3,6 +3,7 @@
 import { Landmark, MapPin, Minus } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import { TourCards } from '../constant'
 
 
 function Tour() {
@@ -22,145 +23,37 @@ function Tour() {
                     </Link>
                 </div>
                 {/* Tour-Cards */}
-                <div className='border-b border-gray-200 flex justify-between py-10'>
-                    <div className='flex justify-between'>
-                        <div>
-                        <img src='assets/Hall.png' alt='/' className='w-60 lg:h-50' />
-                        </div>
-                        <div className='pl-10 pt-5'>
-                            <div className='flex text-[1rem] gap-2'>
-                                
-                                <span className='flex gap-x-1'><MapPin/> Seattle, WA</span> <Minus/>
-                                <span className='flex gap-x-1'><Landmark/> Benaroya Hall</span>
+                {
+                    TourCards.map(item => (
+                        <div className='border-b border-gray-200 flex justify-between py-10'>
+                            <div className='flex justify-between'>
+
+                                <div>
+                                    <img src={item.src} alt={item.src} className='w-60 lg:h-50' />
+                                </div>
+                                <div className='pl-10 pt-5'>
+                                    <div className='flex text-[1rem] gap-2'>
+
+                                        <span className='flex gap-x-1'><MapPin /> {item.place}</span> <Minus />
+                                        <span className='flex gap-x-1'><Landmark /> {item.eventplace}</span>
+                                    </div>
+                                    <h2 className='text-4xl font-medium py-3'>{item.title}</h2>
+                                    <p className='text-lg text-gray-500 w-3/4 py-3'>
+                                     {item.description}
+                                    </p>
+                                </div>
                             </div>
-                            <h2 className='text-4xl font-medium py-3'>An Evening with David Sedaris</h2>
-                            <p className='text-lg text-gray-500 w-3/4 py-3'>
-                             "Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's 
-                             cervics make him one of the greatests humorist writing today." - Chicago Tribune
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div className='pt-20'>
-                        <h3 className='flex justify-end text-xl'>
-                            Nov
-                        </h3>
-                        <span className='text-7xl font-medium'>20</span>
+                            <div className='pt-20'>
+                                <h3 className='flex justify-end text-xl'>
+                                    Nov
+                                </h3>
+                                <span className='text-7xl font-medium'>20</span>
 
-                    </div>
-                </div>
-
-                 <div className='border-b border-gray-200 flex justify-between py-10'>
-                    <div className='flex justify-between'>
-                        <div>
-                        <img src='assets/Hall.png' alt='/' className='w-60 lg:h-50' />
-                        </div>
-                        <div className='pl-10 pt-5'>
-                            <div className='flex text-[1rem] gap-2'>
-                                
-                                <span className='flex gap-x-1'><MapPin/> Seattle, WA</span> <Minus/>
-                                <span className='flex gap-x-1'><Landmark/> Benaroya Hall</span>
                             </div>
-                            <h2 className='text-4xl font-medium py-3'>An Evening with David Sedaris</h2>
-                            <p className='text-lg text-gray-500 w-3/4 py-3'>
-                             "Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's 
-                             cervics make him one of the greatests humorist writing today." - Chicago Tribune
-                                
-                            </p>
                         </div>
-                    </div>
-                    <div className='pt-20'>
-                        <h3 className='flex justify-end text-xl'>
-                            Nov
-                        </h3>
-                        <span className='text-7xl font-medium'>20</span>
+                    ))
+                }
 
-                    </div>
-                </div>
-
-                 <div className='border-b border-gray-200 flex justify-between py-10'>
-                    <div className='flex justify-between'>
-                        <div>
-                        <img src='assets/Hall.png' alt='/' className='w-60 lg:h-50' />
-                        </div>
-                        <div className='pl-10 pt-5'>
-                            <div className='flex text-[1rem] gap-2'>
-                                
-                                <span className='flex gap-x-1'><MapPin/> Seattle, WA</span> <Minus/>
-                                <span className='flex gap-x-1'><Landmark/> Benaroya Hall</span>
-                            </div>
-                            <h2 className='text-4xl font-medium py-3'>An Evening with David Sedaris</h2>
-                            <p className='text-lg text-gray-500 w-3/4 py-3'>
-                             "Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's 
-                             cervics make him one of the greatests humorist writing today." - Chicago Tribune
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div className='pt-20'>
-                        <h3 className='flex justify-end text-xl'>
-                            Nov
-                        </h3>
-                        <span className='text-7xl font-medium'>20</span>
-
-                    </div>
-                </div>
-
-                 <div className='border-b border-gray-200 flex justify-between py-10'>
-                    <div className='flex justify-between'>
-                        <div>
-                        <img src='assets/Hall.png' alt='/' className='w-60 lg:h-50' />
-                        </div>
-                        <div className='pl-10 pt-5'>
-                            <div className='flex text-[1rem] gap-2'>
-                                
-                                <span className='flex gap-x-1'><MapPin/> Seattle, WA</span> <Minus/>
-                                <span className='flex gap-x-1'><Landmark/> Benaroya Hall</span>
-                            </div>
-                            <h2 className='text-4xl font-medium py-3'>An Evening with David Sedaris</h2>
-                            <p className='text-lg text-gray-500 w-3/4 py-3'>
-                             "Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's 
-                             cervics make him one of the greatests humorist writing today." - Chicago Tribune
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div className='pt-20'>
-                        <h3 className='flex justify-end text-xl'>
-                            Nov
-                        </h3>
-                        <span className='text-7xl font-medium'>20</span>
-
-                    </div>
-                </div>
-
-                 <div className='border-b border-gray-200 flex justify-between py-10'>
-                    <div className='flex justify-between'>
-                        <div>
-                        <img src='assets/Hall.png' alt='/' className='w-60 lg:h-50' />
-                        </div>
-                        <div className='pl-10 pt-5'>
-                            <div className='flex text-[1rem] gap-2'>
-                                
-                                <span className='flex gap-x-1'><MapPin/> Seattle, WA</span> <Minus/>
-                                <span className='flex gap-x-1'><Landmark/> Benaroya Hall</span>
-                            </div>
-                            <h2 className='text-4xl font-medium py-3'>An Evening with David Sedaris</h2>
-                            <p className='text-lg text-gray-500 w-3/4 py-3'>
-                             "Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's 
-                             cervics make him one of the greatests humorist writing today." - Chicago Tribune
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div className='pt-20'>
-                        <h3 className='flex justify-end text-xl'>
-                            Nov
-                        </h3>
-                        <span className='text-7xl font-medium'>20</span>
-
-                    </div>
-                </div>
             </section>
         </>
     )

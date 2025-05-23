@@ -24,8 +24,8 @@ function Navbar() {
     }, []);
     return (
         <nav className={`sticky top-0 z-50 border-b border-neutral-200 text-black ${color ? 'bg-[#f8fafb]' : ''}`} >
-            <div className="container lg:px-28 mx-auto relative text-sm">
-                <div className="flex justify-between items-center backdrop-blur-lg py-6">
+            <div className="container lg:px-28 mx-auto relative text-sm backdrop-blur-lg">
+                <div className="flex justify-between items-center py-6">
                     <Link href='/'>
                         {/* <img src='/' alt="Logo" /> */}
                         Author Name

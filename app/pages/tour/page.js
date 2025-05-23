@@ -1,6 +1,7 @@
 
 'use client'
 
+import Banner from '@/app/components/Banner';
 import Footer from '@/app/components/Footer';
 import Navbar from '@/app/components/navbar';
 import Tour from '@/app/components/Tour';
@@ -10,8 +11,9 @@ function TourPage() {
     return (
         <>
             <Navbar />
+            <Banner />
             <Tour />
-            <Footer/>
+            <Footer />
         </>
     )
 }

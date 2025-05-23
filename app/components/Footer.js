@@ -1,52 +1,89 @@
 
 'use client'
 
-import React from 'react';
-import { footer1, footer2 } from '../constant';
 import Link from 'next/link';
+import React from 'react';
+import { FiFacebook, FiTwitter, FiLinkedin, FiInstagram } from 'react-icons/fi';
 
-export default function Footer() {
-    return (
-        <>
-            <div className='bg-[#111] text-white list-none'>
-                <div className="flex flex-wrap justify-center items-center lg:justify-between border-b-[.20px] border-b-white py-5 px-4 lg:px-8 text-lg">
-                    
-                    <div className='flex flex-wrap flex-col'>
-                        <div className='flex flex-col'>
-                            <Link href='/' className='flex flex-col items-center lg:items-start'>
-                                <h2 className='text-2xl pl-2 py-20'>Author</h2>
-                                {/* <img src="/" className='w-72 lg:-ml-16'/> */}
-                            </Link>
-                                <p className='text-xl sm:text-sm lg:text-lg -mt-20 lg:-mt-16 py-5 lg:py-0 px-3'>Empowering innovation and delivering cutting-edge solutions,<br/> 
-                                    our software startup is here to redefine the future of technology.</p>
-                        </div>
-                        <div className='flex pt-5 lg:pt-10 pb-5 lg:pb-0 justify-center lg:justify-start  pl-0 lg:pl-4'>
-                        {
-                            footer2.map((item, index) => (
-                                <li key={index}>
-                                    <a href={item.href} target={item.target} className='text-2xl'><i className={item.icon}></i></a>
-                                </li>
-                            ))
-                        }
-                        </div>
-                    </div>
+const Footer = () => {
+  const quickLinks = [
+    { name: 'Home', link: '/' },
+    { name: 'About Us', link: '#about' },
+    { name: 'Products', link: '#products' },
+    { name: 'Services', link: '#services' },
+    { name: 'Contact', link: '#contact' }
+  ];
 
-                    <div className='flex flex-col pt-4 lg:pt-64'>                      
-                         {
-                            footer1.map((item, index) => (
-                                <li className='px-5 pb-2' key={index}>
-                                    <a href={item.href} target={item.target} className='text-2xl'><i className={item.icon}></i>{item.No}</a>
-                                </li>
-                            ))
-                        }
-                    </div>
-                </div>
+  const productCategories = [
+    { name: 'Terms of Use', href: '#' },
+    { name: 'Privacy Policy', href: '#' },
+    { name: 'Contact Us', href: '/contact' }
+  ];
 
-                <div className='text-center'>
-                    <p className='p-10'>© 2024 Author. All rights reserved</p>
-                </div>
+  return (
+    <footer className="bg-black text-white pt-16 pb-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 mb-12">
 
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-semibold mb-6">Author</h3>
+            <ul className="space-y-3">
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.link} className="text-gray-400 hover:text-white transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* About Company */}
+          <div className='text-center flex flex-col items-center gap-y-3'>
+            {/* <img className='h-14 w-72 mb-6 -ml-0 lg:-ml-7' src='/' alt='Footer'/> */}
+            <h2 className='text-2xl'>Author</h2>
+            <p className="text-gray-400 mb-6 text-lg">
+             'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune
+            </p>
+            <div className="flex space-x-4 justify-center">
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FiFacebook size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FiTwitter size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FiLinkedin size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FiInstagram size={20} />
+              </a>
             </div>
-        </>
-    )
-}
+          </div>
+
+          {/* Product Categories */}
+          <div>
+            <h3 className="text-xl font-semibold mb-6">Product Categories</h3>
+            <ul className="space-y-3">
+              {productCategories.map((category, index) => (
+                <li key={index}>
+                  <Link href={category.href} className="text-gray-400 hover:text-white transition-colors">
+                    {category.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Author. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
