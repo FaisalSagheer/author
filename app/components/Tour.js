@@ -24,8 +24,8 @@ function Tour() {
                 </div>
                 {/* Tour-Cards */}
                 {
-                    TourCards.map(item => (
-                        <div className='border-b border-gray-200 flex justify-between py-10'>
+                    TourCards.map((item,key) => (
+                        <div className='border-b border-gray-200 flex justify-between py-10' key={key}>
                             <div className='flex justify-between'>
 
                                 <div>
