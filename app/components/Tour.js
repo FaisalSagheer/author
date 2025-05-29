@@ -12,7 +12,7 @@ function Tour() {
             <section className='max-w-2xl lg:max-w-7xl mx-auto py-10 px-4 lg:px-10'>
 
                 <div className='flex justify-between items-center pb-10'>
-                    <h2 className='text-2xl lg:text-5xl font-bold'>
+                    <h2 className='text-3xl lg:text-5xl font-bold'>
                         Upcoming Events
                     </h2>
                     <Link
@@ -26,24 +26,25 @@ function Tour() {
                 {
                     TourCards.map((item,key) => (
                         <div className='border-b border-gray-200 flex justify-between py-10' key={key}>
-                            <div className='flex justify-between'>
+                            <div className='flex flex-wrap lg:flex-nowrap justify-between items-center'>
 
-                                <div>
-                                    <img src={item.src} alt={item.src} className='w-60 lg:h-50' />
+                                <div className='mx-auto'>
+                                    <img src={item.src} alt={item.src} className='w-80 lg:w-60 lg:h-50' />
                                 </div>
-                                <div className='pl-10 pt-5'>
-                                    <div className='flex text-[1rem] gap-2'>
-
+                                <div className='lg:pl-10 pt-5 text-center lg:text-left flex flex-wrap justify-center lg:justify-start'>
+                                    <div className='text-[1rem] gap-x-2 flex'>
                                         <span className='flex gap-x-1'><MapPin /> {item.place}</span> <Minus />
                                         <span className='flex gap-x-1'><Landmark /> {item.eventplace}</span>
                                     </div>
+                                    <div>
                                     <h2 className='text-4xl font-medium py-3'>{item.title}</h2>
-                                    <p className='text-lg text-gray-500 w-3/4 py-3'>
+                                    <p className='text-lg text-gray-500 lg:w-3/4 py-3'>
                                      {item.description}
                                     </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='pt-20'>
+                            <div className='lg:pt-20'>
                                 <h3 className='flex justify-end text-xl'>
                                     Nov
                                 </h3>

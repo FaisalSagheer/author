@@ -48,13 +48,13 @@ function Audios() {
 
     return (
         <>
-            <section className='max-w-2xl lg:max-w-7xl mx-auto py-10 px-4 lg:px-10 bg-[#f8fafb]'>
+            <section className='mx-auto py-10 px-4 lg:px-10 bg-[#f8fafb]'>
                 <div className='pb-10'>
                     <h2 className='text-5xl font-bold text-center'>
                         Listen to a David Sedaris Excerpt
                     </h2>
                 </div>
-                <div className='flex justify-evenly items-center pt-10'>
+                <div className='flex flex-wrap items-center justify-center pt-10'>
                     <div>
                         <img src='assets/audio.png' alt='/' className='w-100' />
                     </div>
@@ -64,7 +64,7 @@ function Audios() {
                                 <li key={person.email} className="flex justify-between items-center gap-x-6 py-5">
                                     <div className="flex min-w-0 gap-x-4 items-center">
                                         <span className='text-xl'>{person.no}</span>
-                                        <img alt="" src={person.imageUrl} className="size-18 flex-none bg-gray-50" />
+                                        <img alt="/" src={person.imageUrl} className="size-18 flex-none bg-gray-50" />
                                         <div className="min-w-0 flex-auto px-20">
                                             <p className="text-lg/6 font-semibold text-gray-900">{person.name}</p>
                                         </div>
