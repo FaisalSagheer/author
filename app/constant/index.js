@@ -36,7 +36,7 @@ export const TourCards = [
   {
     src:"/assets/Hall.png",
     alt:"/",
-    place:"Seattle, WA",
+    place:"New York City, NY",
     eventplace:"Benaroya Hall",
     title:"An Evening with David Sedaris",
     description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"
@@ -52,7 +52,7 @@ export const TourCards = [
   {
     src:"/assets/Hall.png",
     alt:"/",
-    place:"Seattle, WA",
+    place:"New York City, NY",
     eventplace:"Benaroya Hall",
     title:"An Evening with David Sedaris",
     description:"'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune"

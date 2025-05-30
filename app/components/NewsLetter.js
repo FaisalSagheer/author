@@ -4,7 +4,7 @@ import React from "react";
 export default function NewsLetter() {
   return (
     <>
-      <section>
+      <section className="pt-10">
         <div className="mx-auto text-center max-w-7xl px-10">
           <h2 className="text-xl lg:text-5xl max-w-4xl mx-auto font-bold">
             Sign up for the NewsLetter for updates on writing, tours, and more.

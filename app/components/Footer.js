@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className='text-center lg:flex justify-start'>
             <ul className="space-y-3">
-            <h3 className="text-xl font-semibold mb-6">Logo</h3>
+            <h3 className="text-xl font-semibold mb-6">Logo Image</h3>
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.link} className="text-gray-400 hover:text-white transition-colors">
