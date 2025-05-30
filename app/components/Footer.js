@@ -23,12 +23,12 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white pt-16 pb-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 mb-12">
+        <div className="flex flex-col gap-y-10 lg:gap-y-0 lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 mb-12">
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Author</h3>
+          <div className='text-center lg:flex justify-start'>
             <ul className="space-y-3">
+            <h3 className="text-xl font-semibold mb-6">Logo</h3>
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.link} className="text-gray-400 hover:text-white transition-colors">
@@ -63,9 +63,9 @@ const Footer = () => {
           </div>
 
           {/* Product Categories */}
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Product Categories</h3>
+          <div className='text-center lg:flex justify-end'>
             <ul className="space-y-3">
+            <h3 className="text-xl font-semibold mb-6">Product Categories</h3>
               {productCategories.map((category, index) => (
                 <li key={index}>
                   <Link href={category.href} className="text-gray-400 hover:text-white transition-colors">

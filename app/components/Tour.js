@@ -51,6 +51,13 @@ function Tour() {
                                 <span className='text-7xl font-medium'>20</span>
 
                             </div>
+                            {/* <div className='relative right-28 top-85 lg:hidden flex'>
+                                <h3 className='text-sm'>
+                                    Nov
+                                </h3>
+                                <span className='text-3xl font-medium'>20</span>
+
+                            </div> */}
                         </div>
                     ))
                 }
