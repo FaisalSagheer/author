@@ -10,7 +10,7 @@ function Contact() {
     return (
         <>
             <Navbar />
-            <Banner/>
+            <Banner title="Contact"/>
             <Email />
             <Footer />
         </>

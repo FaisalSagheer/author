@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 
-function Banner() {
+function Banner(props) {
     return (
         <>
             <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-44">
@@ -36,7 +36,7 @@ function Banner() {
                 </div>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto lg:mx-0">
-                        <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl text-center">Tours</h2>
+                        <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl text-center">{props.title}</h2>
                     </div>
                 </div>
             </div>
