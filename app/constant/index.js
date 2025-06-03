@@ -2,10 +2,10 @@
 
 export const navItems = [
   //   { prop: "Home",  href:'/'},
-  { prop: "Bio", href: "/" },
+  { prop: "Bio", href: "/pages/bio" },
   { prop: "Tour", href: "/pages/tour" },
-  { prop: "Audio Books", href: "/" },
-  { prop: "Books", href: "/" },
+  { prop: "Audio Books", href: "/pages/audio" },
+  { prop: "Books", href: "/pages/books" },
   { prop: "Contact", href: "/pages/contact" },
 ];
 
@@ -22,6 +22,35 @@ export const AboutBook = [
   },
 ];
 
+export const AuthorBooks = [
+  {
+    id: 1,
+    name: "David Sedaris's Calypso",
+    href: '#',
+    imageSrc: '/assets/Calypso.png',
+    imageAlt: "Front of men's Basic Tee in black.",
+    // price: '$35',
+    // color: 'Black',
+  },
+  {
+    id: 2,
+    name: "Theft by Finding Diaries",
+    href: '#',
+    imageSrc: '/assets/Book2.png',
+    imageAlt: "Front of men's Basic Tee in black.",
+    // price: '$35',
+    // color: 'Black',
+  },
+  {
+    id: 3,
+    name: "Let's Explore Diabetes with Owls",
+    href: '#',
+    imageSrc: '/assets/Book3.png',
+    imageAlt: "Front of men's Basic Tee in black.",
+    // price: '$35',
+    // color: 'Black',
+  },
+]
 export const TourData = [
   {
     src: "/assets/Hall.png",
@@ -32,7 +61,7 @@ export const TourData = [
     description:
       "'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune",
     month: "Dec",
-    dated: "4",
+    dated: "04",
   },
   {
     src: "/assets/Hall.png",
@@ -43,7 +72,7 @@ export const TourData = [
     description:
       "'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune",
     month: "Nov",
-    dated: "4",
+    dated: "04",
   },
   {
     src: "/assets/Hall.png",
@@ -54,7 +83,7 @@ export const TourData = [
     description:
       "'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune",
     month: "Dec",
-    dated: "4",
+    dated: "04",
   },
   {
     src: "/assets/Hall.png",
@@ -76,7 +105,7 @@ export const TourData = [
     description:
       "'Sedaris droll assessment of the mundane and the ecentrics who inhabitat the world's cervics make him one of the greatests humorist writing today.' - Chicago Tribune",
     month: "Dec",
-    dated: "4",
+    dated: "04",
   },
   {
     src: "/assets/Hall.png",
@@ -90,6 +119,8 @@ export const TourData = [
     dated: "20",
   },
 ];
+
+
 
 export const footer1 = [
   { icon: "fa-solid fa-phone px-2", No: "+1 (512) 889-7071" },

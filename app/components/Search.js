@@ -18,7 +18,7 @@ function Search({onChange}) {
               name="Search"
               type="text"
               placeholder="Search for item by Title..."
-              className="block w-90 lg:w-180 grow py-4 px-5 text-base text-pizza-black placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
+              className="block w-90 lg:w-180 grow py-4 px-5 text-sm text-black placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
             />
 
             <div className="shrink-0 text-base text-gray-500 select-none sm:text-sm/6 py-2 px-5">

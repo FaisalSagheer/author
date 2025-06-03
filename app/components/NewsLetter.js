@@ -4,7 +4,7 @@ import React from "react";
 export default function NewsLetter() {
   return (
     <>
-      <section className="pt-10">
+      <section className="pt-20">
         <div className="mx-auto text-center max-w-7xl px-10">
           <h2 className="text-xl lg:text-5xl max-w-4xl mx-auto font-bold">
             Sign up for the NewsLetter for updates on writing, tours, and more.
@@ -35,7 +35,7 @@ export default function NewsLetter() {
           </div>
         </div>
         <div className="">
-          <img src="assets/Banner.png" className="w-[120rem]" alt="/" />
+          <img src="/assets/Banner.png" className="w-[120rem]" alt="/" />
         </div>
       </section>
     </>

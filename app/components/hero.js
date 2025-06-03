@@ -20,8 +20,8 @@ export default function Hero() {
               </h2>
                <span className='text-3xl text-[#111] leading-10'>(Los Angeles Times)</span>
               <p className="mt-6 text-lg/8 text-pretty text-gray-400">
-              David Sedarisis the best selling author of the books Calypso.
-              Theft by Finding.Let's Explore 
+              David Sedarisis the best selling author of the books Calypso,
+              Theft by Finding,Let's Explore 
               Diabetes with Owls, Squirrels Seeks e.t.c. 
               </p>
               <div className="mt-6 flex items-center justify-center lg:justify-start gap-x-6">

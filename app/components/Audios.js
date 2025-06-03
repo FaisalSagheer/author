@@ -1,7 +1,7 @@
 'use client'
 
-import { ChartNoAxesColumn, Play } from 'lucide-react'
 import React from 'react'
+import { ChartNoAxesColumn, Play } from 'lucide-react'
 
 function Audios() {
     const people = [
