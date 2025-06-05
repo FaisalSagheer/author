@@ -35,7 +35,7 @@ function Content() {
         {/* Tour-Cards */}
 
         {search ? (
-          <section>
+          <section className="py-10">
             {filteredItem.length > 0 ? (
               <section>
                 {filteredItem.map((item, key) => (
@@ -49,7 +49,7 @@ function Content() {
             )}
           </section>
         ) : (
-          <section>
+          <section className="py-10">
             {TourData.map((item, key) => (
               <TourCard data={item} key={key} />
             ))}

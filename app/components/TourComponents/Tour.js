@@ -9,9 +9,9 @@ import TourCard from "@/app/components/TourComponents/tourCard";
 function Tour() {
   return (
     <>
-      <section className="max-w-2xl lg:max-w-7xl mx-auto py-10 px-4 lg:px-10">
-        <div>
-          <h2 className="text-3xl lg:text-5xl font-bold">Upcoming Events</h2>
+      <section className="max-w-2xl lg:max-w-7xl mx-auto lg:py-10 px-6 lg:px-10">
+        <div className="py-5">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center lg:text-left">Upcoming Events</h2>
         </div>
         {/* Tour-Cards */}
         {TourData.length > 0 ? (
