@@ -38,7 +38,7 @@ export default function Hero() {
             </div>
             </div>
             {/* Hero-Image */}
-            <div className="relative h-80 lg:mt-0 mb-30 lg:mb-0 ">
+            <div className="relative h-80 lg:mt-0 mb-30 lg:mb-0">
               {HeroItems.map((item,key)=>
               <img key={key}
               alt={item.alt}

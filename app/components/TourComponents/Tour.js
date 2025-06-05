@@ -1,12 +1,12 @@
 "use client";
 
-import { Landmark, MapPin, Minus } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { TourData } from "../../constant";
 import TourCard from "@/app/components/TourComponents/tourCard";
 
 function Tour() {
+
   return (
     <>
       <section className="max-w-2xl lg:max-w-7xl mx-auto lg:py-10 px-6 lg:px-10">
