@@ -5,9 +5,8 @@ import { HeroItems } from '../constant'
 import Link from 'next/link'
 import { Minus } from 'lucide-react'
 
-
-
 export default function Hero() {
+  
     return (
       <div className="bg-white">
         <div className="mx-auto max-w-7xl">
