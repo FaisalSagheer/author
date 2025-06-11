@@ -1,4 +1,3 @@
-
 "use client";
 import { Landmark, MapPin, Minus } from "lucide-react";
 import React from "react";
@@ -26,13 +25,27 @@ function TourCard(props) {
           </div>
           <div className="lg:pl-10 pt-5 text-center lg:text-left flex flex-wrap justify-center lg:justify-start">
             <div className="text-[1rem] gap-x-2 flex">
-              <div className="flex">
+              <div className="lg:flex hidden">
                 <span className="flex gap-x-1">
                   <MapPin /> {place}
                 </span>{" "}
                 <Minus />
                 <span className="flex gap-x-1">
                   <Landmark /> {eventplace}
+                </span>
+              </div>
+              <div className="flex lg:hidden">
+                <span className="flex gap-x-1">
+                  <MapPin /> {place}
+                </span>{" "}
+                <Minus />
+                <span className="flex gap-x-1">
+                  <Landmark /> {eventplace}
+                </span>
+                <Minus />
+                <span className="flex gap-x-1">
+                  <h3 className="">{month}</h3>
+                  <span className="">{dated}</span>
                 </span>
               </div>
             </div>
