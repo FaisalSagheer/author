@@ -26,7 +26,7 @@ function Navbar() {
         <nav className={`sticky top-0 z-50 border-b border-neutral-200 text-black ${color ? 'bg-[#f8fafb]' : ''}`} >
             <div className="container lg:px-28 mx-auto relative text-sm backdrop-blur-lg">
                 <div className="flex justify-between items-center py-6">
-                    <Link href='/' className='pl-5'>
+                    <Link href='/' className='pl-5 lg:pl-0'>
                         {/* <img src='/' alt="Logo" /> */}
                         Author Name
                     </Link>

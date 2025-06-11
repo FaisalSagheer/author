@@ -1,11 +1,27 @@
-'use client'
+"use client";
 
-import React from 'react'
+import React, { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 
 export default function ProductSection() {
+  const Des = useRef();
+  const ImgRef = useRef();
+  useGSAP(() => {
+    gsap.from(Des.current, {
+      y: 360,
+      duration: 2,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ImgRef,
+        scroller: "body",
+        markers: true,
+        start: "top 50%",
+      },
+    });
+  });
   return (
-    <div className="relative isolate mx-auto max-w-7xl overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-
+    <div className="relative isolate mx-auto max-w-7xl overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" ref={Des}>
       <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-60 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
@@ -14,40 +30,40 @@ export default function ProductSection() {
                 <span className="text-base/7 leading-10">David Sedaris</span>
                 The "champion storyTeller,"
               </h3>
-              <h3 className='text-3xl text-[#111] leading-10 font-semibold'>(Los Angeles Times) returns with his first new collection of personal essays since
-                the bestselling Calypso.
+              <h3 className="text-3xl text-[#111] leading-10 font-semibold">
+                (Los Angeles Times) returns with his first new collection of
+                personal essays since the bestselling Calypso.
               </h3>
               <h2 className="py-6 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                 Happy-Go-Lucky
               </h2>
               <p className="mt-6 text-2xl text-gray-500 font-sans">
-                In <span className='font-medium text-[#111]'>Happy-Go-Lucky,</span>
-                David Sedarisis once again captures what is most unexcepted,hilarious
-                and poignant about these recent upheavels, personal and public and
-                expresses in precise language both the misanthropy and desire for connection
-                that drive us all. If we must live in interesting times, there is no one better
-                to chronicle them than the incomparable David Sedaris.
+                In{" "}
+                <span className="font-medium text-[#111]">Happy-Go-Lucky,</span>
+                David Sedarisis once again captures what is most
+                unexcepted,hilarious and poignant about these recent upheavels,
+                personal and public and expresses in precise language both the
+                misanthropy and desire for connection that drive us all. If we
+                must live in interesting times, there is no one better to
+                chronicle them than the incomparable David Sedaris.
               </p>
             </div>
-            <div className='pt-20'>
-              <h4 className='text-2xl'>
+            <div className="pt-20">
+              <h4 className="text-2xl">
                 4.5
-                <span className='text-gray-400'>
-                  /5- from 4,114 ratings
-                </span>
+                <span className="text-gray-400">/5- from 4,114 ratings</span>
               </h4>
-              <img className='pt-3' src='assets/Amazon_Logo.png' alt='/'/>
+              <img className="pt-3" src="assets/Amazon_Logo.png" alt="/" />
             </div>
           </div>
         </div>
         {/* Book Image*/}
-        <div className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden ">
+        <div className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden" ref={ImgRef}>
           <img
             alt="/"
             src="assets/Book.png"
             className="w-lg mx-auto sm:w-[528px] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 "
           />
-
         </div>
 
         {/* <div className="lg:col-span-1 lg:col-start-2 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
@@ -98,8 +114,7 @@ export default function ProductSection() {
             </div>
           </div>
         </div> */}
-
       </div>
     </div>
-  )
+  );
 }
