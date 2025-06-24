@@ -3,30 +3,24 @@
 import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function BookIntro() {
   // const ImgRef = useRef();
-  const Intro = useRef()
-  useGSAP(
-    () => {
-      gsap.from(Intro.current, {
-        x: 200,
-        // opacity: 0,
-      });
-      ScrollTrigger.create( {
-          trigger: ImgRef,
-          start: "bottom bottom",
-          end: "top 20%",
-          // opacity: 1,
-          scrub: 0.5,
-          markers: true,
-        })
-    },
-    { scope: "body" }
-  );
+  gsap.registerPlugin(ScrollTrigger);
+  // const Intro = useRef();
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: "#Intro",
+      start:"top center",
+      end:"top 100px",
+      onEnter:()=>{console.log("Enter")}
+    });
+  });
   return (
-    <div className="relative isolate mx-auto max-w-7xl overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" ref={Intro}>
+    <div
+      className="relative isolate mx-auto max-w-7xl overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+    id="Intro">
       <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-60 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
@@ -63,10 +57,7 @@ export default function BookIntro() {
           </div>
         </div>
         {/* Book Image*/}
-        <div
-          className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
-          
-        >
+        <div className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             alt="/"
             src="assets/Book.png"
