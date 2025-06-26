@@ -1,18 +1,19 @@
 "use client";
 
 import Banner from "@/app/components/Banner";
-import Footer from "@/app/components/Footer";
-import Navbar from "@/app/components/navbar";
 import React, { useState } from "react";
 import Content from "./content";
+import ReactLenis from "@studio-freight/react-lenis";
+import NewsLetter from "@/app/components/NewsLetter";
 
 function TourPage() {
   return (
     <>
-      <Navbar />
+    <ReactLenis root>
       <Banner title="Tour" />
       <Content />
-      <Footer />
+      <NewsLetter/>
+    </ReactLenis>
     </>
   );
 }

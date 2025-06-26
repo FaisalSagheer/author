@@ -1,20 +1,20 @@
+'use client'
 import Banner from '@/app/components/Banner'
-import Footer from '@/app/components/Footer'
-import Navbar from '@/app/components/navbar'
 import NewsLetter from '@/app/components/NewsLetter'
 import React from 'react'
 import Content from './content'
+import ReactLenis from '@studio-freight/react-lenis'
 
-function audio() {
+function AudioBooks() {
   return (
     <>
-     <Navbar/>
+    <ReactLenis root>
      <Banner title="Audio Books"/>
      <Content/>
      <NewsLetter/>
-     <Footer/> 
+    </ReactLenis>
     </>
   )
 }
 
-export default audio
+export default AudioBooks

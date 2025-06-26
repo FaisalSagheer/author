@@ -1,14 +1,17 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Website from './website/page'
+import React from "react";
+import Website from "./website/page";
+import ReactLenis from "@studio-freight/react-lenis";
 
 function page() {
   return (
     <>
-    <Website/>
+      <ReactLenis root>
+        <Website />
+      </ReactLenis>
     </>
-  )
+  );
 }
 
-export default page
+export default page;

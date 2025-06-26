@@ -1,20 +1,19 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Navbar from '../../components/navbar'
-import Footer from '@/app/components/Footer';
-import Email from './Email';
-import Banner from '@/app/components/Banner';
+import React from "react";
+import Email from "./Email";
+import Banner from "@/app/components/Banner";
+import ReactLenis from "@studio-freight/react-lenis";
 
 function Contact() {
-    return (
-        <>
-            <Navbar />
-            <Banner title="Contact Me"/>
-            <Email />
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <ReactLenis root>
+        <Banner title="Contact Me" />
+        <Email />
+      </ReactLenis>
+    </>
+  );
 }
 
 export default Contact;

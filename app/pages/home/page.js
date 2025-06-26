@@ -8,7 +8,6 @@ import Books from '../../components/BooksSection'
 import Tour from '../../components/TourComponents/Tour'
 import Audios from '../../components/Audios'
 import NewsLetter from '../../components/NewsLetter'
-import Footer from '../../components/Footer'
 function Home() {
   
   return (
@@ -19,8 +18,7 @@ function Home() {
       <Books />
       <Tour />
       <Audios />
-      <NewsLetter />
-      <Footer />
+      <NewsLetter />      
     </>
   )
 }

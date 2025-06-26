@@ -1,3 +1,6 @@
+import { ViewTransitions } from "next-view-transitions";
+import Footer from "./components/Footer";
+import Navbar from "./components/navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -7,10 +10,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <body>
+          <Navbar />
+          {children}
+          {/* <Footer /> */}
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

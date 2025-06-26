@@ -1,19 +1,18 @@
 "use client";
 import React from "react";
 import Content from "./content";
-import Navbar from "@/app/components/navbar";
-import Footer from "@/app/components/Footer";
 import Banner from "@/app/components/Banner";
 import NewsLetter from "@/app/components/NewsLetter";
+import ReactLenis from "@studio-freight/react-lenis";
 
 function Bio() {
   return (
     <>
-      <Navbar />
-      <Banner title="Bio"/>
-      <Content />
-      <NewsLetter/>
-      <Footer/>
+      <ReactLenis root>
+        <Banner title="Bio" />
+        <Content />
+        <NewsLetter />
+      </ReactLenis>
     </>
   );
 }

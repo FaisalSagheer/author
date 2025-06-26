@@ -1,9 +1,12 @@
+
 "use client";
+
 import React, { useRef } from "react";
 import { HeroItems } from "../constant";
 import Link from "next/link";
 import { Minus } from "lucide-react";
 export default function Hero() {
+
   
   return (
     <div className="bg-white">
@@ -27,13 +30,13 @@ export default function Hero() {
             </p>
             <div className="mt-6 flex items-center justify-center lg:justify-start gap-x-6">
               <Link
-                href="#"
-                className="rounded-md bg-[#111] px-7.5 py-4.5 text-sm font-semibold text-white shadow-xs hover:bg-gray-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+                href="/pages/bio"
+                className="rounded-md bg-[#111] px-7.5 py-3 text-[1rem] font-semibold text-white shadow-xs hover:bg-gray-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
               >
                 Read More
               </Link>
               <Link
-                href="#"
+                href="/pages/books"
                 className="text-[1rem] font-semibold text-gray-900 hover:underline"
               >
                 Check My Work
