@@ -5,15 +5,26 @@ import React, { useRef } from "react";
 import { HeroItems } from "../constant";
 import Link from "next/link";
 import { Minus } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 export default function Hero() {
 
-  
+  const main = useRef()
+
+  useGSAP(
+   () => {
+        gsap.from(main.current, {
+          y: -100,
+          opacity:0,
+        });
+    }
+)
   return (
-    <div className="bg-white">
+    <div className="bg-white" ref={main}>
       <div className="flex justify-center my-10">
         <div className="px-6 pt-8 sm:px-16 md:pt-16 lg:flex items-center lg:gap-x-60 lg:px-0 lg:pt-0">
           {/* Hero Description */}
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+          <div className="box mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <p className="text-base/7 text-gray-500 leading-10 flex items-center justify-center lg:justify-start">
               <Minus /> David Sedarisis
             </p>
@@ -45,7 +56,7 @@ export default function Hero() {
             </div>
           </div>
           {/* Hero-Image */}
-          <div className="relative h-80 lg:mt-0 mb-30 lg:mb-0">
+          <div className="box relative h-80 lg:mt-0 mb-30 lg:mb-0">
             {HeroItems.map((item, key) => (
               <img
                 key={key}

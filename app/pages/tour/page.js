@@ -1,7 +1,7 @@
 "use client";
 
 import Banner from "@/app/components/Banner";
-import React, { useState } from "react";
+import React from "react";
 import Content from "./content";
 import ReactLenis from "@studio-freight/react-lenis";
 import NewsLetter from "@/app/components/NewsLetter";

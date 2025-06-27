@@ -6,23 +6,38 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function BookIntro() {
-  // const ImgRef = useRef();
-  gsap.registerPlugin(ScrollTrigger);
-  // const Intro = useRef();
-  useGSAP(() => {
-    ScrollTrigger.create({
-      trigger: "#Intro",
-      start:"top center",
-      end:"top 100px",
-      onEnter:()=>{console.log("Enter")}
-    });
-  });
+  // const main = useRef();
+
+  // useGSAP(
+  //   () => {
+  //     gsap.registerPlugin(ScrollTrigger);
+  //     const boxes = gsap.utils.toArray('.box');
+  //     boxes.forEach((box) => {
+  //       gsap.to(box, {
+  //         // y: 100,
+  //         scrollTrigger: {
+  //           trigger: box,
+  //           start: 'top top',
+  //           end: '+=100',
+  //           scrub: true,
+  //           markers: true,
+  //           // opacity:0,
+  //         },
+  //         opacity:0,
+  //       });
+  //     });
+  //   },
+  //   { scope: main }
+  // );
+
   return (
     <div
       className="relative isolate mx-auto max-w-7xl overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
-    id="Intro">
+      // ref={main}
+    >
       <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-60 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-        <div className="lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+        {/* Intro */}
+        <div className="block-1 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:w-lg text-[#111]">
               <h3 className="text-3xl leading-14 font-semibold">
@@ -57,7 +72,7 @@ export default function BookIntro() {
           </div>
         </div>
         {/* Book Image*/}
-        <div className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="block-1 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             alt="/"
             src="assets/Book.png"
