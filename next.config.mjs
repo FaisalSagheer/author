@@ -6,8 +6,7 @@ const nextConfig = {
   experimental: {
     viewTransition: true,
   },
-  output: "export",
-  // other Next.js config options can go here
+  // output: "export",
 };
 
 export default nextConfig;

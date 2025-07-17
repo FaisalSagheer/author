@@ -2,11 +2,12 @@
 
 export const navItems = [
   //   { prop: "Home",  href:'/'},
-  { prop: "Bio", href: "/pages/bio" },
-  { prop: "Tour", href: "/pages/tour" },
-  { prop: "Audio Books", href: "/pages/audiobooks" },
-  { prop: "Books", href: "/pages/books" },
-  { prop: "Contact", href: "/pages/contact" },
+  { prop: "Bio", href: "/bio" },
+  { prop: "Tour", href: "/tour" },
+  { prop: "Audio Books", href: "/audiobooks" },
+  { prop: "Books", href: "/books" },
+  { prop: "Blogs", href: "/blogs" },
+  { prop: "Contact", href: "/contact" },
 ];
 
 export const HeroItems = [

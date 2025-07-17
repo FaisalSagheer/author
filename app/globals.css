@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@keyframes appear {
+/* @keyframes appear {
   from{
     opacity: 0;
     scale: 0.5;
@@ -11,7 +11,7 @@
   }
 }
 .block-1{
-  animation: appear 2s linear;
-  /* animation-timeline: view();
-  animation-range: entry 30%; */
-}
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 30%;
+} */
